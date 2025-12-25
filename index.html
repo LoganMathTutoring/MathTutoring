@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logan's Math Tutoring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      font-family: 'Comic Neue', sans-serif;
+      background: #fffbe6;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 { color: #e91e63; font-size: 36px; margin: 5px 0; }
+    h3 { color: #ff5722; margin-bottom: 40px; }
+
+    /* sections */
+    .section {
+      background: #e0f7fa;
+      border: 3px dotted #00bcd4;
+      border-radius: 25px;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 650px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 5px 5px 0 #ffeb3b;
+      transition: transform 0.3s ease;
+    }
+    .section:hover { transform: translateY(-5px) rotate(-1deg); }
+
+    h2 { color: #009688; margin-bottom: 10px; font-size: 24px; }
+    p { font-size: 16px; line-height: 1.5; }
+
+    /* animated doodles */
+    .doodle {
+      position: absolute;
+      font-size: 50px;
+      color: rgba(200,200,200,0.2);
+      animation: float 15s linear infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translate(0,0) rotate(0deg); }
+      100% { transform: translate(20px,-20px) rotate(360deg); }
+    }
+
+    /* contact buttons */
+    .contact {
+      margin: 30px 0;
+    }
+    .btn { 
+      display: inline-block; 
+      margin: 10px; 
+      padding: 14px 28px; 
+      background: #ff9800; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 15px; 
+      cursor: pointer; 
+      font-weight: bold;
+      box-shadow: 3px 3px 0 #f44336;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover { 
+      background: #fb8c00; 
+      transform: scale(1.1) rotate(-2deg);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dover, DE *ONLY*</h1>
+  <h3>Logan's Math Tutoring</h3>
+
+  <!-- doodles -->
+  <div class="doodle" style="top:10%; left:5%;">∑</div>
+  <div class="doodle" style="top:20%; left:80%;">π</div>
+  <div class="doodle" style="top:70%; left:10%;">√</div>
+  <div class="doodle" style="top:60%; left:75%;">∞</div>
+  <div class="doodle" style="top:50%; left:50%;">×</div>
+  <div class="doodle" style="top:30%; left:60%;">÷</div>
+
+  <div class="section">
+    <h2>what i do</h2>
+    <p>i find what the student is struggling with, and help them with different problems and tricks, until they master the topic!</p>
+  </div>
+
+  <div class="section">
+    <h2>my background</h2>
+    <p>3 years straight a’s in math, strong in algebra & geometry, and real tutoring experience with peers.</p>
+  </div>
+
+  <div class="section">
+    <h2>what i can help improve</h2>
+    <p>algebra, geometry, fractions, decimals, percentages, powers of, square roots, and more!</p>
+  </div>
+
+  <div class="contact">
+    <a href="mailto:loganmathtutoring16@gmail.com?subject=Tutoring Inquiry" class="btn">email me</a>
+    <span class="btn" onclick="navigator.clipboard.writeText('423-738-8195')">copy phone</span>
+  </div>
+
+</body>
+</html>
